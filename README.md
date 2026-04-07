@@ -11,14 +11,14 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 
 <img width="1920" height="1080" alt="Screenshot (141)" src="https://github.com/user-attachments/assets/2f13bce2-c5a7-435f-9311-7e978abe06a7" />
 
-### Step#1:Connect instance, (update && upgrate the system)
+### Step#1 :Connect instance, (update && upgrate the system)
 
 <img width="1920" height="1080" alt="Screenshot (142)" src="https://github.com/user-attachments/assets/1b410ab2-5c24-4ab9-8523-cad4a8f8cc28" />
 
 <img width="1920" height="1080" alt="Screenshot (143)" src="https://github.com/user-attachments/assets/781eef28-a3f8-4d8a-8801-67452a9caf37" />
 
 
-### Step#1:Install Postfix on Ubuntu
+### Step#2 :Install Postfix on Ubuntu
 
 <img width="1920" height="1080" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/b6d75850-d6ec-43a4-b08c-0e95db370e25" />
 
@@ -34,9 +34,9 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 ### [smtp.gmail.com]:587 vaishnavighotekar@gmail.com:logwrbyaqcmwslqp
 <img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/71d1e634-a43b-42a3-958d-b081cf4f820c" />
 
-### Step#2: Update Postfix main.cf file
+### Step#3 : Update Postfix main.cf file
 
-### Step #3:Generate Google App Password for Postfix 
+### Step4 #:Generate Google App Password for Postfix 
 
 
 <img width="1920" height="1080" alt="Screenshot (149)" src="https://github.com/user-attachments/assets/54f71bb9-95f8-451a-958e-2823a2b50094" />
@@ -47,17 +47,50 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 
 
 
-### Step #4:Add Gmail Username and App Password to Postfix configuration
+### Step #:Add Gmail Username and App Password to Postfix configuration
 
 <img width="1920" height="1080" alt="Screenshot (154)" src="https://github.com/user-attachments/assets/cc9628a8-049b-42e0-816b-9e738de37ab6" />
 
-### Step #5:Secure Your Postfix Hash Database and Email Password Files
+### Step #:Secure Your Postfix Hash Database and Email Password Files
+
+### chown root:root /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
+### chmod 0600 /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
+
+<img width="1920" height="1080" alt="Screenshot (156)" src="https://github.com/user-attachments/assets/080e0626-757b-4520-a96f-e24c037cb42a" />
 
 
-### Step #6:Configure Relay Host postfix with gmail
+### Step #:Configure Relay Host postfix with gmail
+
+### Set the relayhost
+
+relayhost = [smtp.gmail.com]:587
+
+<img width="1920" height="1080" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/186a0c13-1cfa-4aaa-b9b0-368639741aba" />
 
 
-### Step #7:Add Custom Configuration
+### Step #:Add Custom Configuration
+### sudo nano /etc/postfix/main.cf
+# Enable SASL authentication
+smtp_sasl_auth_enable = yes
+# Disallow methods that allow anonymous authentication
+smtp_sasl_security_options = noanonymous
+# Location of sasl_passwd
+smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
+# Enable STARTTLS encryption
+smtp_tls_security_level = encrypt
+# Location of CA certificates
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 
+<img width="1920" height="1080" alt="Screenshot (160)" src="https://github.com/user-attachments/assets/a096891a-15af-4c05-851d-810dec4b5b3d" />
+
+### Restart the system
 
 ### Step #9:Send Email using sendmail
+
+sendmail example@gmail.com
+From: root@gmail.com
+Subject: Test mail
+Testing Email
+.
+<img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/893dbcaa-3277-481f-8a63-56ddf62934a3" />
+<img width="1920" height="1080" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/ee3e133f-104d-4453-8726-cabccbd7120d" />
