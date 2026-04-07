@@ -30,6 +30,8 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 
 ### Create /etc/postfix/sasl/sasl_passwd file and add your gmail ID and password we have just created using below command
 
+### cat /etc/postfix/sasl/sasl_passwd
+### [smtp.gmail.com]:587 vaishnavighotekar@gmail.com:logwrbyaqcmwslqp
 <img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/71d1e634-a43b-42a3-958d-b081cf4f820c" />
 
 ### Step#2: Update Postfix main.cf file
