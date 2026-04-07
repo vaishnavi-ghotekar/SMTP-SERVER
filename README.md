@@ -2,7 +2,9 @@
 Set up and configure an SMTP server on a Linux machine and verify email sending functionality.
 ### Create security group
 <img width="1920" height="1080" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/62f582a4-5fe4-4eaa-8603-a2ca00d53568" />
+### Create Ec2 ubuntu instance with ports 22, 25, 587 
 <img width="1920" height="1080" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/b1ff2fb9-194b-45b2-ac44-f764cfa2d81b" />
+### connect it and update and upgrade server 
 <img width="1920" height="1080" alt="Screenshot (160)" src="https://github.com/user-attachments/assets/071d9dec-60f7-4d2c-8575-139648a251d4" />
 <img width="1920" height="1080" alt="Screenshot (162)" src="https://github.com/user-attachments/assets/16a1b9a0-8be3-4a0f-8a19-69e5e9a4c596" />
 <img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/d16f65bb-f6a3-47d2-9e49-610af90e5b28" />
