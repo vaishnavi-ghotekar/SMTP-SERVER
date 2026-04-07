@@ -40,7 +40,6 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 
 
 <img width="1920" height="1080" alt="Screenshot (149)" src="https://github.com/user-attachments/assets/54f71bb9-95f8-451a-958e-2823a2b50094" />
-<img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/ace882df-8b93-4864-b3a7-a04cc4f71810" />
 
 
 <img width="1920" height="1080" alt="Screenshot (157)" src="https://github.com/user-attachments/assets/478054b1-8fe1-4dae-841e-eee736d31ea8" />
