@@ -35,24 +35,24 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 <img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/71d1e634-a43b-42a3-958d-b081cf4f820c" />
 
 
-### Step4 #:Generate Google App Password for Postfix 
+### Step3 #:Generate Google App Password for Postfix 
 
 
 <img width="1920" height="1080" alt="Screenshot (149)" src="https://github.com/user-attachments/assets/54f71bb9-95f8-451a-958e-2823a2b50094" />
 
 
-### Step#3 : Update Postfix main.cf file
+### Step#4 : Update Postfix main.cf file
 
 <img width="1920" height="1080" alt="Screenshot (157)" src="https://github.com/user-attachments/assets/478054b1-8fe1-4dae-841e-eee736d31ea8" />
 
 
 
 
-### Step #:Add Gmail Username and App Password to Postfix configuration
+### Step5 #:Add Gmail Username and App Password to Postfix configuration
 
 <img width="1920" height="1080" alt="Screenshot (154)" src="https://github.com/user-attachments/assets/cc9628a8-049b-42e0-816b-9e738de37ab6" />
 
-### Step #:Secure Your Postfix Hash Database and Email Password Files
+### Step6 #:Secure Your Postfix Hash Database and Email Password Files
 
 ### chown root:root /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
 ### chmod 0600 /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
@@ -60,7 +60,7 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 <img width="1920" height="1080" alt="Screenshot (156)" src="https://github.com/user-attachments/assets/080e0626-757b-4520-a96f-e24c037cb42a" />
 
 
-### Step #:Configure Relay Host postfix with gmail
+### Step7 #:Configure Relay Host postfix with gmail
 
 ### Set the relayhost
 
@@ -69,8 +69,10 @@ relayhost = [smtp.gmail.com]:587
 <img width="1920" height="1080" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/186a0c13-1cfa-4aaa-b9b0-368639741aba" />
 
 
-### Step #:Add Custom Configuration
+### Step8 #:Add Custom Configuration
+
 ### sudo nano /etc/postfix/main.cf
+
 # Enable SASL authentication
 smtp_sasl_auth_enable = yes
 # Disallow methods that allow anonymous authentication
@@ -86,7 +88,7 @@ smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 
 ### Restart the system
 
-### Step #9:Send Email using sendmail
+### Step9# :Send Email using sendmail
 
 sendmail example@gmail.com
 From: root@gmail.com
