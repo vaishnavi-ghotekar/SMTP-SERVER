@@ -54,7 +54,7 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 
 ### chown root:root /etc/postfix/sasl/sasl_passwd 
 
-### chmod 600 /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
+### chmod 600 /etc/postfix/sasl/sasl_passwd 
 
 <img width="1920" height="1080" alt="Screenshot (156)" src="https://github.com/user-attachments/assets/080e0626-757b-4520-a96f-e24c037cb42a" />
 
