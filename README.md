@@ -93,10 +93,16 @@ Testing Email
 <img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/893dbcaa-3277-481f-8a63-56ddf62934a3" />
 <img width="1920" height="1080" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/ee3e133f-104d-4453-8726-cabccbd7120d" />
 
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
-### I built a bulk email automation system using Python and SMTP. I used Docker to run MailHog for testing email delivery and verified messages through a web interface
 
+
+### I built a bulk email automation system using Python and SMTP. I used Docker to run MailHog for testing email delivery and verified messages through a web interface (make sure port 1025 and 8025 is open)
+
+
+### execute a command to run a container (docker run -d -p 1025:1025 -p 8025:8025 mailhog/mailhog )
 <img width="1919" height="150" alt="Screenshot 2026-04-28 151334" src="https://github.com/user-attachments/assets/21386e25-13ee-4963-9a6c-0f38e3e9537d" />
 
 ### I created a Python script and executed it successfully (send_bulk.sh)
