@@ -104,7 +104,7 @@ Testing Email
 <img width="1919" height="150" alt="Screenshot 2026-04-28 151334" src="https://github.com/user-attachments/assets/21386e25-13ee-4963-9a6c-0f38e3e9537d" />
 
 
-### Create a python script and run it 
+### I created a Python script and executed it successfully
 <img width="650" height="62" alt="Screenshot 2026-04-28 151401" src="https://github.com/user-attachments/assets/38804e72-d454-4093-babc-dc3adcc2d5dd" />
 
 ### I received emails in MailHog, which is created inside the container.
