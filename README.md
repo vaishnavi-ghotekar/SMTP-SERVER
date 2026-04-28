@@ -41,10 +41,19 @@ Set up and configure an SMTP server on a Linux machine and verify email sending 
 <img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/71d1e634-a43b-42a3-958d-b081cf4f820c" />
 
 
-### Step#4 : Update Postfix main.cf file
+### Step#4 : Update Postfix main.cf file (vim /etc/postfix/main.cf)
 
 <img width="1920" height="1080" alt="Screenshot (157)" src="https://github.com/user-attachments/assets/478054b1-8fe1-4dae-841e-eee736d31ea8" />
-
+# Enable SASL authentication
+smtp_sasl_auth_enable = yes
+# Disallow methods that allow anonymous authentication
+smtp_sasl_security_options = noanonymous
+# Location of sasl_passwd
+smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
+# Enable STARTTLS encryption
+smtp_tls_security_level = encrypt
+# Location of CA certificates
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 
 ### Step5 #:Add Gmail Username and App Password to Postfix configuration
 
@@ -68,20 +77,7 @@ relayhost = [smtp.gmail.com]:587
 <img width="1920" height="1080" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/186a0c13-1cfa-4aaa-b9b0-368639741aba" />
 
 
-### Step8 #:Add Custom Configuration
 
-### sudo nano /etc/postfix/main.cf
-
-# Enable SASL authentication
-smtp_sasl_auth_enable = yes
-# Disallow methods that allow anonymous authentication
-smtp_sasl_security_options = noanonymous
-# Location of sasl_passwd
-smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
-# Enable STARTTLS encryption
-smtp_tls_security_level = encrypt
-# Location of CA certificates
-smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 
 <img width="1920" height="1080" alt="Screenshot (160)" src="https://github.com/user-attachments/assets/a096891a-15af-4c05-851d-810dec4b5b3d" />
 
