@@ -96,3 +96,24 @@ Testing Email
 .
 <img width="1920" height="1080" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/893dbcaa-3277-481f-8a63-56ddf62934a3" />
 <img width="1920" height="1080" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/ee3e133f-104d-4453-8726-cabccbd7120d" />
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### I built a bulk email automation system using Python and SMTP. I used Docker to run MailHog for testing email delivery and verified messages through a web interface
+
+<img width="1920" height="1080" alt="Screenshot (200)" src="https://github.com/user-attachments/assets/d242c01e-2f94-4b46-aacf-6101bb82ee3b" />
+
+<img width="726" height="672" alt="Screenshot 2026-04-28 151251" src="https://github.com/user-attachments/assets/c64a34ec-afbf-4e04-9ec2-5746e2ec820d" />
+
+<img width="1919" height="150" alt="Screenshot 2026-04-28 151334" src="https://github.com/user-attachments/assets/21386e25-13ee-4963-9a6c-0f38e3e9537d" />
+
+
+### Create a python script
+<img width="650" height="62" alt="Screenshot 2026-04-28 151401" src="https://github.com/user-attachments/assets/38804e72-d454-4093-babc-dc3adcc2d5dd" />
+
+### Recieved a mail i MailHog that is create inside container
+<img width="1919" height="1077" alt="Screenshot 2026-04-28 152052" src="https://github.com/user-attachments/assets/c06455d9-c558-46a7-b7f8-e9606a070579" />
+
+
+
+
