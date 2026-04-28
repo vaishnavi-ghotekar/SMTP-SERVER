@@ -108,10 +108,10 @@ Testing Email
 <img width="1919" height="150" alt="Screenshot 2026-04-28 151334" src="https://github.com/user-attachments/assets/21386e25-13ee-4963-9a6c-0f38e3e9537d" />
 
 
-### Create a python script
+### Create a python script and run it 
 <img width="650" height="62" alt="Screenshot 2026-04-28 151401" src="https://github.com/user-attachments/assets/38804e72-d454-4093-babc-dc3adcc2d5dd" />
 
-### Recieved a mail i MailHog that is create inside container
+### Recieved a mail in MailHog that is create inside container
 <img width="1919" height="1077" alt="Screenshot 2026-04-28 152052" src="https://github.com/user-attachments/assets/c06455d9-c558-46a7-b7f8-e9606a070579" />
 
 
