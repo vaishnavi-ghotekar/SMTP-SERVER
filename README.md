@@ -97,8 +97,6 @@ Testing Email
 
 ### I built a bulk email automation system using Python and SMTP. I used Docker to run MailHog for testing email delivery and verified messages through a web interface
 
-<img width="1920" height="1080" alt="Screenshot (200)" src="https://github.com/user-attachments/assets/d242c01e-2f94-4b46-aacf-6101bb82ee3b" />
-
 <img width="726" height="672" alt="Screenshot 2026-04-28 151251" src="https://github.com/user-attachments/assets/c64a34ec-afbf-4e04-9ec2-5746e2ec820d" />
 
 <img width="1919" height="150" alt="Screenshot 2026-04-28 151334" src="https://github.com/user-attachments/assets/21386e25-13ee-4963-9a6c-0f38e3e9537d" />
